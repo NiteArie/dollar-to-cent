@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollars To Cents</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1 class="container__title">Dollars To Cents</h1>
+        <form class="container__form">
+            <span class="container__form__dollar-label">&dollar;</span>
+            <input type="text" class="container__form__dollar" placeholder="0.00">
+        </form>
+        <p class="container__to">To</p>
+        <form class="container__form">
+            <span class="container__form__cent-label">&cent;</span>
+            <input type="text" class="container__form__cent" placeholder="0">
+        </form>
+        <table class="container__table">
+            <tbody>
+                <tr class="container__table__row">
+                    <td>Quarters</td>
+                    <td class="container__table__row__quarters">0</td>
+                </tr>
+                <tr class="container__table__row">
+                    <td>Dimes</td>
+                    <td class="container__table__row__dimes">0</td>
+                </tr>
+                <tr class="container__table__row">
+                    <td>Nickels</td>
+                    <td class="container__table__row__nickels">0</td>
+                </tr>
+                <tr class="container__table__row">
+                    <td>Pennies</td>
+                    <td class="container__table__row__pennies">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
