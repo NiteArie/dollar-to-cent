@@ -15,5 +15,5 @@ The challenge: Try this without using any frameworks.
 
 ## Bonus Features
 
-* [ ] User can see how many were pennies, nickels, quarters and dimes from the total cents
+* [X] User can see how many were pennies, nickels, quarters and dimes from the total cents
 * [X] User can see warning if invalid characters are entered 
