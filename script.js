@@ -12,8 +12,15 @@ const app = (() => {
         if ( validDollarInput(_dollar) ) {
             let _cent = convertDollarToCent(_dollar);
             renderCentOutput(_cent);
+            let coinType = divideType(_cent);
+
+            renderQuarterTotal(coinType.quarter);
+            renderDimeTotal(coinType.dime);
+            renderNickelTotal(coinType.nickel);
+            renderPennyTotal(coinType.penny);
         } else {
             renderCentOutput(0);
+            renderCleanCoinType();
         }
     })
 
@@ -43,5 +50,45 @@ const app = (() => {
 
     function renderCentOutput(cent) {
         _centOutput.value = cent;
+    }
+
+    function renderQuarterTotal(quarter) {
+        _quarterTotal.textContent = quarter;
+    }
+
+    function renderDimeTotal(dime) {
+        _dimeTotal.textContent = dime;
+    }
+
+    function renderNickelTotal(nickel) {
+        _nickelTotal.textContent = nickel;
+    }
+
+    function renderPennyTotal(penny) {
+        _pennyTotal.textContent = penny;
+    }
+
+    function divideType(cent) {
+        let quarter = parseInt(cent / 25);
+        cent = cent - (quarter * 25);
+        let dime = parseInt(cent / 10);
+        cent = cent - (dime * 10);
+        let nickel = parseInt(cent / 5);
+        cent = cent - (nickel * 5);
+        let penny = cent;
+
+        return {
+            quarter,
+            dime,
+            nickel,
+            penny,
+        }
+    }
+
+    function renderCleanCoinType() {
+        _quarterTotal.textContent = 0;
+        _dimeTotal.textContent = 0;
+        _nickelTotal.textContent = 0;
+        _pennyTotal.textContent = 0;
     }
 })();
