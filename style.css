@@ -46,6 +46,11 @@ body {
     outline: none;
 }
 
+.container__form input:disabled {
+    cursor: not-allowed;
+    background-color: white;
+}
+
 .container__form__dollar-label {
     position: absolute;
     top: 35%;
