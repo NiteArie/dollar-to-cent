@@ -11,9 +11,9 @@ The challenge: Try this without using any frameworks.
 ## User Stories
 
 * [X] User can enter a dollar value
-* [ ] User can see the total cents from the converted dollar value
+* [X] User can see the total cents from the converted dollar value
 
 ## Bonus Features
 
 * [ ] User can see how many were pennies, nickels, quarters and dimes from the total cents
-* [ ] User can see warning if invalid characters are entered 
+* [X] User can see warning if invalid characters are entered 
